@@ -267,6 +267,7 @@ applied to the buffer."
   :man-page "docker-image-run"
   :class 'docker-run-prefix
   ["Arguments"
+   ("g" "gpus" "--gpus " read-string)
    ("D" "With display" "-v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY")
    ("M" "Mount volume" "--mount=" read-string)
    ("N" "Network" "--network " read-string)
@@ -276,12 +277,12 @@ applied to the buffer."
    ("d" "Detach" "-d")
    ("e" "environment" "-e " read-string)
    ("i" "Interactive" "-i")
+   ("t" "TTY" "-t")
    ("m" "name" "--name " read-string)
    ("n" "entrypoint" "--entrypoint " read-string)
    ("o" "Read only" "--read-only")
    ("p" "port" "-p " read-string)
    ("r" "Remove container when it exits" "--rm")
-   ("t" "TTY" "-t")
    ("u" "user" "-u " read-string)
    ("v" "volume" "-v " read-string)
    ("w" "workdir" "-w " read-string)]
