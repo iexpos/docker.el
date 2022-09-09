@@ -281,6 +281,7 @@ applied to the buffer."
    ("m" "name" "--name " read-string)
    ("n" "entrypoint" "--entrypoint " read-string)
    ("o" "Read only" "--read-only")
+   ("I" "ipc" "--ipc " read-string)
    ("p" "port" "-p " read-string)
    ("r" "Remove container when it exits" "--rm")
    ("u" "user" "-u " read-string)
